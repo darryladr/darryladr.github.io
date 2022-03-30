@@ -150,8 +150,8 @@
 	&:after {
 		content: '';
 		position: absolute;
-		width: 100vw;
-		height: 100%;
+		width: 100%;
+		height: 100vh;
 		top: 0;
 		right: 0;
 		z-index: -1;
@@ -159,15 +159,16 @@
 	}
 
 	@media only screen and (max-width: 56.25em) {
-		// tab-land
 		&:after {
 			// transform: rotate(90deg);
 			background-position: 50% 0%;
+			width: 100vw;
 			left: 0;
 			bottom: 0;
 			background: url('../img/svg/home-bg-mobile.svg') 100% 0 no-repeat;
 		}
 	}
+
 	.hero {
 		position: absolute;
 		top: 50%;

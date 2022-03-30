@@ -47,6 +47,7 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
+  overflow-x: hidden !important;
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -78,7 +79,7 @@ body {
   font-size: 1.6rem;
   background-color: #000000;
   color: #ececec;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -92,7 +93,7 @@ body {
 }
 
 body.loaded {
-  overflow: auto;
+  overflow: hidden;
 }
 
 main {
@@ -545,8 +546,8 @@ section {
 .header:after {
   content: '';
   position: absolute;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
   top: 0;
   right: 0;
   z-index: -1;
@@ -556,6 +557,7 @@ section {
 @media only screen and (max-width: 56.25em) {
   .header:after {
     background-position: 50% 0%;
+    width: 100vw;
     left: 0;
     bottom: 0;
     background: url("../img/svg/home-bg-mobile.svg") 100% 0 no-repeat;
