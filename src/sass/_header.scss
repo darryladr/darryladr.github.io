@@ -142,6 +142,7 @@
 .header {
 	position: relative;
 	overflow: hidden;
+	height: 100vh;
 	min-height: 80rem;
 	@media only screen and (max-width: 37.5em) {
 		// phone
@@ -156,6 +157,7 @@
 		right: 0;
 		z-index: -1;
 		background: url('../img/svg/home-bg.svg') 100% 0 no-repeat;
+		background-size: cover;
 	}
 
 	@media only screen and (max-width: 56.25em) {
@@ -166,6 +168,7 @@
 			left: 0;
 			bottom: 0;
 			background: url('../img/svg/home-bg-mobile.svg') 100% 0 no-repeat;
+			background-position: bottom;
 		}
 	}
 

@@ -534,6 +534,7 @@ section {
 .header {
   position: relative;
   overflow: hidden;
+  height: 100vh;
   min-height: 80rem;
 }
 
@@ -552,6 +553,7 @@ section {
   right: 0;
   z-index: -1;
   background: url("../img/svg/home-bg.svg") 100% 0 no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -561,6 +563,7 @@ section {
     left: 0;
     bottom: 0;
     background: url("../img/svg/home-bg-mobile.svg") 100% 0 no-repeat;
+    background-position: bottom;
   }
 }
 
